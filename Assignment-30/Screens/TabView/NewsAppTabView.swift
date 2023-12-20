@@ -11,13 +11,13 @@ struct NewsAppTabView: View {
     // MARK: - Body
     var body: some View {
         TabView {
-            DailyNewsScreen()
+            DailyNewsView()
                 .tabItem {
                     Image(systemName: "newspaper")
                     Text("Daily News")
                 }
             
-            FavoriteNewsScreen()
+            FavoriteNewsView()
                 .tabItem {
                     Image(systemName: "heart")
                     Text("Favorites")
