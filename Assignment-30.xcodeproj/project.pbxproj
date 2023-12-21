@@ -70,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				B514C8CA2B33772C009B7493 /* App */,
+				B514C8DE2B33999B009B7493 /* Models */,
 				B514C8CB2B337733009B7493 /* Screens */,
 				B514C8D32B337CBB009B7493 /* Components */,
 				B514C8E12B339E3E009B7493 /* Helpers */,
@@ -99,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				B514C8CE2B3378BF009B7493 /* TabView */,
-				B514C8DE2B33999B009B7493 /* Models */,
 				B514C8CF2B3378D0009B7493 /* MainScreen */,
 				B514C8D22B337910009B7493 /* FavoritesScreen */,
 			);

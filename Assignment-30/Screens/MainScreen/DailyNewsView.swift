@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct DailyNewsView: View {
+    // MARK: - Properties
     @ObservedObject private var viewModel = DailyNewsViewModel()
     
-    
+    // MARK: - Body
     var body: some View {
         VStack {
             JournalEntryFormView(viewModel: viewModel)

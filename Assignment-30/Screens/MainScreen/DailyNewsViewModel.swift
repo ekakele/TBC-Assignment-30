@@ -8,10 +8,10 @@
 import SwiftUI
 
 final class DailyNewsViewModel: ObservableObject {
+    // MARK: - Properties
     @Published var journal: [News] = NewsMockData.mockJournal
-//    @Published var news: News
     
-    
+    // MARK: - Methods
     func saveNews(title: String, text: String, date: Date) {
         let news = News(title: title, description: text, date: date, image: "")
         journal.append(news)

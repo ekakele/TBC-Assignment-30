@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct NewsLisView: View {
+    // MARK: - Properties
     @ObservedObject var viewModel: DailyNewsViewModel
-    
     @State private var title = ""
     @State private var text = ""
     @State private var date = Date()
     
+    // MARK: - Body
     var body: some View {
         NavigationView {
             if viewModel.journal.isEmpty {
@@ -22,13 +23,16 @@ struct NewsLisView: View {
             else {
                 listView
                     .navigationTitle("Journal")
+                    .navigationBarTitleDisplayMode(.automatic)
                     .toolbar(content: {
                         EditButton()
                     })
             }
         }
+        .accentColor(.appOrange)
     }
     
+    // MARK: - Components
     private var listView: some View {
         return List {
             

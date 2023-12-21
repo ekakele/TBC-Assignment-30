@@ -10,7 +10,6 @@ import SwiftUI
 struct JournalEntryFormView: View {
     // MARK: - Properties
     @ObservedObject var viewModel: DailyNewsViewModel
-    
     @State private var title = ""
     @State private var text = ""
     @State private var date = Date()
@@ -18,16 +17,20 @@ struct JournalEntryFormView: View {
     // MARK: - Body
     var body: some View {
         NavigationStack {
-            VStack {
-                formView
-                    .navigationTitle("News Entry Form")
-
+            ZStack(alignment: .bottom) {
+                VStack {
+                    formView
+                        .navigationTitle("News Entry Form")
+                        .navigationBarTitleDisplayMode(.automatic)
+                }
                 saveButtonView
             }
+            
         }
         .accentColor(.appOrange)
     }
     
+    // MARK: - Components
     private var formView: some View {
         Form {
             Section {

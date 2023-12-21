@@ -8,32 +8,29 @@
 import SwiftUI
 
 struct ButtonView: View {
+    // MARK: - Properties
     var title: String
     var color: Color = nil ?? .appOrange
     var action: (() -> Void)?
-
     
+    // MARK: - Body
     var body: some View {
-//        ZStack {
-//            Color.clear
-            
-            Button(action: {
-                action?()
-            }, label: {
-                Text(title)
-                    .frame(width: 140, height: 60)
-                    .background(color)
-                    .font(.system(size: 20))
-                    .bold()
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-                    .padding(.top, 5)
-            })
-            .buttonStyle(PlainButtonStyle())
-//        }
+        Button(action: {
+            action?()
+        }, label: {
+            Text(title)
+                .frame(width: 100, height: 50)
+                .background(color)
+                .font(.system(size: 20))
+                .bold()
+                .foregroundColor(.white)
+                .cornerRadius(10)
+                .padding(.top, 5)
+        })
+        .buttonStyle(PlainButtonStyle())
     }
 }
 
 #Preview {
-    ButtonView(title: "test", color: .appOrange)
+    ButtonView(title: "save", color: .appOrange)
 }
