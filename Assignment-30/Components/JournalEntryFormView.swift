@@ -18,10 +18,12 @@ struct JournalEntryFormView: View {
     // MARK: - Body
     var body: some View {
         NavigationStack {
-            formView
-                .navigationTitle("News Entry Form")
+            VStack {
+                formView
+                    .navigationTitle("News Entry Form")
 
-            saveButtonView
+                saveButtonView
+            }
         }
         .accentColor(.appOrange)
     }

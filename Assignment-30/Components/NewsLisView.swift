@@ -16,11 +16,16 @@ struct NewsLisView: View {
     
     var body: some View {
         NavigationView {
-            listView
-                .navigationTitle("Journal")
-                .toolbar(content: {
-                    EditButton()
-                })
+            if viewModel.journal.isEmpty {
+                EmptyJournalView()
+            }
+            else {
+                listView
+                    .navigationTitle("Journal")
+                    .toolbar(content: {
+                        EditButton()
+                    })
+            }
         }
     }
     
@@ -53,12 +58,12 @@ struct NewsLisView: View {
         }
         .padding(.trailing, 11)
         .foregroundColor(.clear)
-        .frame(width: .infinity, height: 100)
+        .frame(width: .infinity, height: 80)
         .cornerRadius(8)
     }
     
     private func infoStackView(news: News) -> some View {
-        VStack(alignment: .leading, spacing: 16) {
+        VStack(alignment: .leading, spacing: 8) {
             titleBodyStackView(news: news)
             
             dateStackView(news: news)
@@ -68,7 +73,7 @@ struct NewsLisView: View {
     }
     
     private func titleBodyStackView(news: News) -> some View {
-        VStack(alignment: .leading, spacing: 6) {
+        VStack(alignment: .leading, spacing: 4) {
             Text(news.title)
                 .font(.title2)
                 .bold()

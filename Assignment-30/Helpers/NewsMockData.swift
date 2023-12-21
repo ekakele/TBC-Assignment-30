@@ -10,7 +10,7 @@ import SwiftUI
 struct NewsMockData {
     
     static let mockNews = News(
-        title: "Breaking News 1",
+        title: "Breaking News",
         description: "This is the first breaking news.",
         date: Date(),
         image: "news_image_1"

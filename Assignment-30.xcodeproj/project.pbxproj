@@ -19,6 +19,7 @@
 		B514C8E02B339A59009B7493 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B514C8DF2B339A59009B7493 /* NewsModel.swift */; };
 		B514C8E32B339E61009B7493 /* NewsMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B514C8E22B339E61009B7493 /* NewsMockData.swift */; };
 		B514C8E72B33A7AA009B7493 /* NewsLisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B514C8E62B33A7AA009B7493 /* NewsLisView.swift */; };
+		B514C8E92B33C9D7009B7493 /* EmptyJournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B514C8E82B33C9D7009B7493 /* EmptyJournalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		B514C8DF2B339A59009B7493 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		B514C8E22B339E61009B7493 /* NewsMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsMockData.swift; sourceTree = "<group>"; };
 		B514C8E62B33A7AA009B7493 /* NewsLisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsLisView.swift; sourceTree = "<group>"; };
+		B514C8E82B33C9D7009B7493 /* EmptyJournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyJournalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				B514C8D52B337F3D009B7493 /* JournalEntryFormView.swift */,
 				B514C8E62B33A7AA009B7493 /* NewsLisView.swift */,
 				B514C8DA2B3393DE009B7493 /* ButtonView.swift */,
+				B514C8E82B33C9D7009B7493 /* EmptyJournalView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				B514C8D12B337902009B7493 /* FavoriteNewsView.swift in Sources */,
 				B514C8BF2B3376BF009B7493 /* DailyNewsView.swift in Sources */,
 				B514C8DB2B3393DE009B7493 /* ButtonView.swift in Sources */,
+				B514C8E92B33C9D7009B7493 /* EmptyJournalView.swift in Sources */,
 				B514C8CD2B3377D0009B7493 /* NewsAppTabView.swift in Sources */,
 				B514C8E72B33A7AA009B7493 /* NewsLisView.swift in Sources */,
 				B514C8E32B339E61009B7493 /* NewsMockData.swift in Sources */,

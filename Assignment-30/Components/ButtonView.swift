@@ -14,18 +14,23 @@ struct ButtonView: View {
 
     
     var body: some View {
-        Button(action: {
-            action?()
-        }, label: {
-            Text(title)
-                .frame(width: 140, height: 60)
-                .background(color)
-                .font(.system(size: 20))
-                .bold()
-                .foregroundColor(.white)
-                .cornerRadius(10)
-                .padding(.top, 5)
-        })
+//        ZStack {
+//            Color.clear
+            
+            Button(action: {
+                action?()
+            }, label: {
+                Text(title)
+                    .frame(width: 140, height: 60)
+                    .background(color)
+                    .font(.system(size: 20))
+                    .bold()
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+                    .padding(.top, 5)
+            })
+            .buttonStyle(PlainButtonStyle())
+//        }
     }
 }
 
