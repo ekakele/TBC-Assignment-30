@@ -28,5 +28,13 @@ final class DailyNewsViewModel: ObservableObject {
     func textIsAppropriate(title: String) -> Bool {
         title.count >= 2
     }
+    
+    func removeNews(index: IndexSet) {
+        journal.remove(atOffsets: index)
+    }
+    
+    func moveNews(index: IndexSet, toOffset: Int) {
+        journal.move(fromOffsets: index, toOffset: toOffset)
+    }
 }
 

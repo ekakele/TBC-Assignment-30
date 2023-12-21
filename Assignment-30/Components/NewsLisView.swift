@@ -18,14 +18,21 @@ struct NewsLisView: View {
         NavigationView {
             listView
                 .navigationTitle("Journal")
+                .toolbar(content: {
+                    EditButton()
+                })
         }
     }
     
     private var listView: some View {
-        List(viewModel.journal, id: \.self) { news in
-            listRowView(news: news)
+        return List {
+            
+            ForEach(viewModel.journal, id: \.self) { news in
+                listRowView(news: news)
+            }
+            .onDelete(perform: viewModel.removeNews(index:))
         }
-        .listStyle(PlainListStyle())
+        //        .listStyle(PlainListStyle())
     }
     
     func listRowView(news: News) -> some View {
