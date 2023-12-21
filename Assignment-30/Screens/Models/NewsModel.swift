@@ -9,12 +9,12 @@ import Foundation
 
 // MARK: - NewsModel
 struct Journal: Hashable {
-    let news: [News]
+    let news: [News] = []
 }
 
 struct News: Hashable {
     let title: String
     let description: String
     let date: Date
-    let image: String
+    let image: String?
 }

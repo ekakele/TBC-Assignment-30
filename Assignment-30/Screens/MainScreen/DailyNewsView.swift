@@ -9,17 +9,16 @@ import SwiftUI
 
 struct DailyNewsView: View {
     @ObservedObject private var viewModel = DailyNewsViewModel()
-
+    
     
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            JournalEntryFormView(viewModel: viewModel)
+            NewsLisView(viewModel: viewModel)
         }
-        .padding()
     }
+    
+    
 }
 
 #Preview {

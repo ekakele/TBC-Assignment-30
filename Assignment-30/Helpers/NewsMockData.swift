@@ -5,7 +5,7 @@
 //  Created by Eka Kelenjeridze on 21.12.23.
 //
 
-import Foundation
+import SwiftUI
 
 struct NewsMockData {
     
@@ -19,16 +19,16 @@ struct NewsMockData {
     static let mockNewsTwo = News(
         title: "Exciting Announcement",
         description: "A major announcement that will impact everyone.",
-        date: Date().addingTimeInterval(3600), // Adding 1 hour for variety
+        date: Date().addingTimeInterval(3600),
         image: "news_image_4"
     )
 
     static let mockNewsThree = News(
         title: "Cultural Event Highlights",
         description: "Explore the cultural richness of our community through various events.",
-        date: Date().addingTimeInterval(7200), // Adding 2 hours for variety
+        date: Date().addingTimeInterval(7200),
         image: "news_image_5"
     )
 
-    static let mockJournal = Journal(news: [mockNews, mockNewsTwo, mockNewsThree])
+    static let mockJournal = [mockNews, mockNewsTwo, mockNewsThree]
 }

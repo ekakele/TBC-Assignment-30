@@ -18,6 +18,7 @@
 		B514C8DD2B3398D7009B7493 /* DailyNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B514C8DC2B3398D7009B7493 /* DailyNewsViewModel.swift */; };
 		B514C8E02B339A59009B7493 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B514C8DF2B339A59009B7493 /* NewsModel.swift */; };
 		B514C8E32B339E61009B7493 /* NewsMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B514C8E22B339E61009B7493 /* NewsMockData.swift */; };
+		B514C8E72B33A7AA009B7493 /* NewsLisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B514C8E62B33A7AA009B7493 /* NewsLisView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		B514C8DC2B3398D7009B7493 /* DailyNewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyNewsViewModel.swift; sourceTree = "<group>"; };
 		B514C8DF2B339A59009B7493 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		B514C8E22B339E61009B7493 /* NewsMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsMockData.swift; sourceTree = "<group>"; };
+		B514C8E62B33A7AA009B7493 /* NewsLisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsLisView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				B514C8D52B337F3D009B7493 /* JournalEntryFormView.swift */,
+				B514C8E62B33A7AA009B7493 /* NewsLisView.swift */,
 				B514C8DA2B3393DE009B7493 /* ButtonView.swift */,
 			);
 			path = Components;
@@ -234,6 +237,7 @@
 				B514C8BF2B3376BF009B7493 /* DailyNewsView.swift in Sources */,
 				B514C8DB2B3393DE009B7493 /* ButtonView.swift in Sources */,
 				B514C8CD2B3377D0009B7493 /* NewsAppTabView.swift in Sources */,
+				B514C8E72B33A7AA009B7493 /* NewsLisView.swift in Sources */,
 				B514C8E32B339E61009B7493 /* NewsMockData.swift in Sources */,
 				B514C8BD2B3376BF009B7493 /* Assignment_30App.swift in Sources */,
 				B514C8D62B337F3D009B7493 /* JournalEntryFormView.swift in Sources */,

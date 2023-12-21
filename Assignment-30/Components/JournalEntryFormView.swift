@@ -9,7 +9,7 @@ import SwiftUI
 
 struct JournalEntryFormView: View {
     // MARK: - Properties
-    @ObservedObject private var viewModel = DailyNewsViewModel()
+    @ObservedObject var viewModel: DailyNewsViewModel
     
     @State private var title = ""
     @State private var text = ""
@@ -20,7 +20,7 @@ struct JournalEntryFormView: View {
         NavigationStack {
             formView
                 .navigationTitle("News Entry Form")
-            
+
             saveButtonView
         }
         .accentColor(.appOrange)
@@ -60,5 +60,5 @@ struct JournalEntryFormView: View {
 }
 
 #Preview {
-    JournalEntryFormView()
+    JournalEntryFormView(viewModel: DailyNewsViewModel())
 }
