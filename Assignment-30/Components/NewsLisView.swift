@@ -30,9 +30,13 @@ struct NewsLisView: View {
             ForEach(viewModel.journal, id: \.self) { news in
                 listRowView(news: news)
             }
-            .onDelete(perform: viewModel.removeNews(index:))
+            .onDelete(perform: { indexSet in
+                viewModel.removeNews(IndexSet: indexSet)
+            })
+            .onMove(perform: { indices, newOffset in
+                viewModel.moveNews(IndexSet: indices, newOffset: newOffset)
+            })
         }
-        //        .listStyle(PlainListStyle())
     }
     
     func listRowView(news: News) -> some View {
@@ -63,7 +67,6 @@ struct NewsLisView: View {
         .padding(.vertical, 20)
     }
     
-    
     private func titleBodyStackView(news: News) -> some View {
         VStack(alignment: .leading, spacing: 6) {
             Text(news.title)
@@ -87,7 +90,6 @@ struct NewsLisView: View {
                 .foregroundStyle(Color.appGray)
         }
     }
-    
 }
 
 #Preview {

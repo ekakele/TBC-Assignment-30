@@ -5,17 +5,10 @@
 //  Created by Eka Kelenjeridze on 21.12.23.
 //
 
-import Foundation
+import SwiftUI
 
 final class DailyNewsViewModel: ObservableObject {
-    @Published var journal: [News] = [
-        News(
-            title: "Cultural Event Highlights",
-            description: "Explore the cultural richness of our community through various events.",
-            date: Date().addingTimeInterval(7200),
-            image: "news_image_5"
-        )
-    ]
+    @Published var journal: [News] = NewsMockData.mockJournal
 //    @Published var news: News
     
     
@@ -29,12 +22,12 @@ final class DailyNewsViewModel: ObservableObject {
         title.count >= 2
     }
     
-    func removeNews(index: IndexSet) {
-        journal.remove(atOffsets: index)
+    func removeNews(IndexSet: IndexSet) {
+        journal.remove(atOffsets: IndexSet)
     }
     
-    func moveNews(index: IndexSet, toOffset: Int) {
-        journal.move(fromOffsets: index, toOffset: toOffset)
+    func moveNews(IndexSet: IndexSet, newOffset: Int) {
+        journal.move(fromOffsets: IndexSet, toOffset: newOffset)
     }
 }
 

@@ -17,8 +17,6 @@ struct DailyNewsView: View {
             NewsLisView(viewModel: viewModel)
         }
     }
-    
-    
 }
 
 #Preview {
