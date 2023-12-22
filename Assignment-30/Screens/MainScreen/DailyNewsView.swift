@@ -13,7 +13,7 @@ struct DailyNewsView: View {
     
     // MARK: - Body
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             JournalEntryFormView(viewModel: viewModel)
             NewsLisView(viewModel: viewModel)
         }
